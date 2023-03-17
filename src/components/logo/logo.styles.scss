@@ -1,0 +1,12 @@
+.logo-container {
+  cursor: pointer;
+  & > img {
+    width: 150px;
+    height: 42px;
+  }
+}
+.logo-hover img {
+  &:hover {
+    transform: scale(0.9);
+  }
+}

@@ -1,0 +1,9 @@
+.ecosystem-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}

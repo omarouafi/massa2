@@ -1,0 +1,53 @@
+.menu-icon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-icon-track {
+  position: absolute;
+  top: 0;
+
+  will-change: transform;
+  transform-origin: center;
+  pointer-events: none;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+
+  &-1 {
+    top: 20px;
+  }
+  &-2 {
+    top: 30px;
+  }
+  &-3 {
+    top: 10px;
+  }
+}
+
+.menu-icon-active {
+  @media only screen and (max-width: 950px) {
+    position: fixed;
+    z-index: 3;
+  }
+  .menu-icon-track {
+    & > * {
+      transform-origin: center;
+    }
+    &-1 {
+      display: none;
+    }
+    &-2 {
+      transform: rotate(135deg);
+      top: 18px;
+      left: -1px;
+    }
+    &-3 {
+      transform: rotate(-135deg);
+      top: 18px;
+    }
+  }
+}

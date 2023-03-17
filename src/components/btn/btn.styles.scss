@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+
+.btn {
+  padding: 10px 24px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  border-radius: 100px;
+  border: transparent;
+
+  &:hover {
+    transform: scale(1.05);
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+
+  &-primary {
+    border: 1px solid $primary-color;
+
+    background-color: $primary-color;
+    color: #fff;
+  }
+  &-outlined {
+    border: 1px solid $primary-color;
+
+    background-color: unset;
+    color: $primary-color;
+  }
+  &-outlined-secondary {
+    border: 3px solid $primary-color;
+
+    background-color: unset;
+    color: white;
+  }
+}

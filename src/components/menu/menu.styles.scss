@@ -1,0 +1,103 @@
+@import "../../styles/variables.scss";
+
+.menu-list {
+  position: absolute;
+  pointer-events: all;
+  touch-action: auto;
+  box-shadow: 0 0 30px rgba(6, 10, 14, 0.3);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  right: 100px;
+  top: 110px;
+  overflow: hidden;
+  z-index: 2;
+  @media only screen and (max-width: 950px) {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    left: 0;
+    height: 100vh;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(9px);
+    & > * {
+      width: max-content;
+    }
+  }
+  &-item {
+    background-color: transparent;
+    color: #fff;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    @media only screen and (max-width: 950px) {
+      padding: 10px;
+    }
+
+    & > a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    &-button {
+      border: 2px solid $primary-color;
+      border-radius: 10px;
+      background-color: transparent;
+      margin-bottom: 0.5rem;
+      color: #fff;
+      font-size: 17px;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 8px 10px;
+      cursor: pointer;
+      margin-top: 25px;
+
+      &:hover > a {
+        opacity: 0.7;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    @media only screen and (max-width: 950px) {
+      margin: 20px;
+    }
+
+    &-link {
+      @media only screen and (max-width: 950px) {
+        margin: 5px 10px;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+      svg {
+        max-width: 30px;
+        max-height: 30px;
+      }
+    }
+  }
+}
