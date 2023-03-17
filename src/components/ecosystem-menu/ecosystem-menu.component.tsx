@@ -9,11 +9,14 @@ function EcosystemMenu() {
   const ecosystem_data = useSelector(
     (state: any) => state.ecosystem.ecosystem_data
   );
+  console.log(location.pathname);
   return (
     <div className="ecosystem-menu">
       <EcosystemMenuItem
-        lien=""
-        active={location.pathname === "/massa" || location.pathname === "/"}
+        lien="massa"
+        active={
+          location.pathname === "/massa" || location.pathname === "/massa/"
+        }
       >
         Overview
       </EcosystemMenuItem>
