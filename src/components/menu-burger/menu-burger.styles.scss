@@ -32,6 +32,10 @@
   @media only screen and (max-width: 950px) {
     position: fixed;
     z-index: 3;
+    box-shadow: none;
+  }
+  @media only screen and (max-width: 650px) {
+    right: 20px;
   }
   .menu-icon-track {
     & > * {
