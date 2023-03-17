@@ -17,7 +17,7 @@ function EcosystemMenu() {
       {ecosystem_data.map((eco: any) => (
         <EcosystemMenuItem
           active={location.pathname === `/massa/${eco.slug}`}
-          lien={eco.slug}
+          lien={`massa/$${eco.slug}`}
         >
           {eco.title}
         </EcosystemMenuItem>
