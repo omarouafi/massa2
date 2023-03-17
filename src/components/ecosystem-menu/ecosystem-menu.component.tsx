@@ -11,7 +11,10 @@ function EcosystemMenu() {
   );
   return (
     <div className="ecosystem-menu">
-      <EcosystemMenuItem lien="" active={location.pathname === "/"}>
+      <EcosystemMenuItem
+        lien=""
+        active={location.pathname === "/" || location.pathname === "/massa"}
+      >
         Overview
       </EcosystemMenuItem>
       {ecosystem_data.map((eco: any) => (
