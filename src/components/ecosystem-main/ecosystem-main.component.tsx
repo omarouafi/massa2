@@ -19,13 +19,12 @@ const EcosystemMain = () => {
         <Routes>
           <Route
             key="ecosystem-overview"
-            path="/"
+            path="/massa"
             Component={EcosystemOverview}
           />
-
           <Route
             key="ecosystem-detail"
-            path="/:slug"
+            path="/massa"
             Component={EcosystemDetail}
           />
         </Routes>
