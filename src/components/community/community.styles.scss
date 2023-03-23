@@ -1,12 +1,13 @@
-.cta {
+.community {
   &-container {
     text-align: center;
-    padding: 70px 170px;
+    padding: 70px 100px;
     border-radius: 30px;
     box-sizing: border-box;
     margin-top: 6rem;
-    @media only screen and (max-width: 650px) {
-      padding: 50px;
+    overflow: hidden;
+    @media only screen and (max-width: 950px) {
+      padding: 30px;
     }
     h3 {
       font-weight: 400;
@@ -47,6 +48,16 @@
       button:first-child {
         margin: 10px 0;
       }
+    }
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    @media only screen and (max-width: 950px) {
+      grid-template-columns: 1fr;
     }
   }
 }

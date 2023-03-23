@@ -4,6 +4,7 @@ import GithubIcon from "../../icons/github-icon/github-icon.component";
 import MenuBurger from "../menu-burger/menu-burger.component";
 import TwitterIcon from "../../icons/twitter-icon/twitter-icon.component";
 import "./menu.styles.scss";
+import Btn from "../btn/btn.component";
 
 const Menu = () => {
   const [isOpened, setIsOpened] = useState(false);
@@ -49,12 +50,8 @@ const Menu = () => {
             </a>
           </div>
 
-          <div>
-            <div className="menu-list-item-button">
-              <a href="#" className="menu-list-item-button-link">
-                Explorer
-              </a>
-            </div>
+          <div className="menu-list-item">
+            <Btn>Explorer</Btn>
           </div>
           <div className="menu-list-footer">
             <a href="" className="menu-list-footer-link">

@@ -12,14 +12,6 @@ function EcosystemMenu() {
   console.log(location.pathname);
   return (
     <div className="ecosystem-menu">
-      <EcosystemMenuItem
-        lien="massa"
-        active={
-          location.pathname === "/massa" || location.pathname === "/massa/"
-        }
-      >
-        Overview
-      </EcosystemMenuItem>
       {ecosystem_data.map((eco: any) => (
         <EcosystemMenuItem
           active={location.pathname === `/massa/${eco.slug}`}

@@ -21,6 +21,9 @@ function EcosystemDetail() {
       initial="initial"
       exit="exit"
     >
+      <div className="ecosystem-detail-description">
+        {ecosystem_data.description}
+      </div>
       <div className="ecosystem-detail-container">
         {ecosystem_data?.cards.map((card: any, idx: number) => (
           <EcosystemDetailCard key={idx} {...card} />

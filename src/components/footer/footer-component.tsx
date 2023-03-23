@@ -5,7 +5,6 @@ import "./footer.styles.scss";
 function Footer() {
   return (
     <div className="footer-container">
-      <FooterHeader />
       <FooterContent />
     </div>
   );

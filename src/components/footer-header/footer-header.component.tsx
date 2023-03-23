@@ -13,7 +13,14 @@ import LinkedInIcon from "../../icons/linkedin-icon/linkedin-icon.component";
 function FooterHeader() {
   return (
     <div className="footer-header">
-      <Logo />
+      <div className="footer-brand-identity">
+        <Logo />
+        <div className="footer-description">
+          Massa is a truly decentralized blockchain controlled by thousands of
+          people. With the breakthrough multithreaded technology, we're set for
+          mass adoption.
+        </div>
+      </div>
       <div className="social-icons">
         <a href="">
           <MediumIcon />

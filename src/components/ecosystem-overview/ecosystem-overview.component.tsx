@@ -8,9 +8,9 @@ import { motion } from "framer-motion";
 import variants from "../../animations/animation";
 
 const EcosystemOverview = () => {
-  const ecosystem_data = useSelector(
-    (state: any) => state.ecosystem.ecosystem_data
-  );
+  // const ecosystem_data = useSelector(
+  //   (state: any) => state.ecosystem.ecosystem_data
+  // );
   return (
     <motion.div
       variants={variants}
@@ -19,15 +19,6 @@ const EcosystemOverview = () => {
       exit="exit"
     >
       <MainCard />
-      <div className="overview-app-cards">
-        {ecosystem_data.map((eco: any) => (
-          <AppCard
-            slug={eco.slug}
-            title={eco.title}
-            description={eco.description}
-          />
-        ))}
-      </div>
     </motion.div>
   );
 };

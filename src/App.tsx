@@ -1,20 +1,29 @@
 import React from "react";
 import "./App.scss";
+import Community from "./components/community/community.component";
 import Cta from "./components/cta/cta.component";
 import EcosystemMain from "./components/ecosystem-main/ecosystem-main.component";
 import Footer from "./components/footer/footer-component";
 import Header from "./components/header/header.component";
+import NewsLetter from "./components/news-letter/news-letter.component";
+import ScrollToTopButton from "./components/scroll-btn/scroll-btn.component";
+import ScrollBtn from "./components/scroll-btn/scroll-btn.component";
 
 function App() {
   return (
     <div className="app-wrapper">
       <Header />
-      <div className="main-title">
-        <h2>Ecosystem</h2>
+      <div className="main-section">
+        <h2 className="main-title">
+          Discover <br /> our <b>Ecosystem</b>
+        </h2>
       </div>
       <EcosystemMain />
       <Cta />
+      <Community />
+      <NewsLetter />
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }
