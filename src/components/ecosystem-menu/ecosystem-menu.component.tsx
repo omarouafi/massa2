@@ -9,7 +9,6 @@ function EcosystemMenu() {
   const ecosystem_data = useSelector(
     (state: any) => state.ecosystem.ecosystem_data
   );
-  console.log(location.pathname);
   return (
     <div className="ecosystem-menu">
       {ecosystem_data.map((eco: any) => (

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.scss";
 import Community from "./components/community/community.component";
 import Cta from "./components/cta/cta.component";
@@ -8,8 +8,18 @@ import Header from "./components/header/header.component";
 import NewsLetter from "./components/news-letter/news-letter.component";
 import ScrollToTopButton from "./components/scroll-btn/scroll-btn.component";
 import ScrollBtn from "./components/scroll-btn/scroll-btn.component";
+import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function App() {
+  const navigate = useNavigate();
+  let ecosystem_data = useSelector(
+    (state: any) => state.ecosystem.ecosystem_data
+  );
+  useEffect(() => {
+    navigate(`/massa/${ecosystem_data[0].slug}`);
+  }, [ecosystem_data]);
+
   return (
     <div className="app-wrapper">
       <Header />
