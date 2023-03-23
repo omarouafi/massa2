@@ -32,7 +32,7 @@ function MainCard() {
         <Routes>
           <Route
             key="ecosystem-detail"
-            path="/massa/:slug"
+            path="/massa2/:slug"
             Component={EcosystemDetail}
           />
         </Routes>

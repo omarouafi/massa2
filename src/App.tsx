@@ -17,7 +17,7 @@ function App() {
     (state: any) => state.ecosystem.ecosystem_data
   );
   useEffect(() => {
-    navigate(`/massa/${ecosystem_data[0].slug}`);
+    navigate(`/massa2/${ecosystem_data[0].slug}`);
   }, [ecosystem_data]);
 
   return (
